@@ -10,3 +10,17 @@
 <출력>
 150
 """
+a = int(input("첫 번째 수를 입력하세요 : "))
+b = int(input("두 번째 수를 입력하세요 : "))
+symbol = input("어떤 연산을 하실 건가요? : ")
+
+if symbol == "+":
+    answer = a + b
+elif symbol == "-":
+    answer = a - b
+elif symbol == "*":
+    answer = a * b
+elif symbol == "/":
+    answer = a / b
+
+print(answer)

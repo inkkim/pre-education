@@ -7,3 +7,13 @@
 <출력>
 짝수입니다.
 """
+num = int(input("정수를 입력하세요 : "))
+
+def EvenOrOdd(num):
+    if (num % 2) == 0:
+        print("짝수입니다.")
+    else:
+        print("홀수입니다.")
+    return
+
+EvenOrOdd(num)
