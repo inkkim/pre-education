@@ -6,3 +6,9 @@
 3  6  9  12  15  18  21  24  27  30  33  36  39  42  45  48  
 
 """
+result = ""
+for k in range(50, 1, -1):
+    if k % 3 == 0:
+        a = str(k) + " "
+        result = a + result
+print(result)

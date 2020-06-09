@@ -14,3 +14,13 @@ print(new_list)
 ['exit', 'hi', 'playdata', 'intro']
 
 """
+file = ['exit.py','hi.py','playdata.hwp','intro.jpg']
+
+str1 = " ".join(file)
+print(str1)
+
+name = []
+for i in range(0, len(str1)):
+    if
+        name.append(str1[i])
+
