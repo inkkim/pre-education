@@ -12,3 +12,25 @@
 짝 짝 짝 짝 짝 짝 짝 짝 짝 짝 짝 아자
 
 """
+
+list1 = []
+for i in range(1, 101):
+    list1.append(str(i))
+
+# list1 요소 각 자리수에 3, 6, 9 중 하나라도 포함이 된다면 "짝"
+for j in list1:
+    for k in j:
+        if (k == "3") | (k == "6") | (k == "9"):
+            index1 = list1.index(j)
+            j = "짝"
+            list1[index1] = j
+
+# index 5단위로 아자 대입
+for a in range(5, 101, 5):
+    if list1[a-1] == "짝":
+        continue
+    list1[a-1] = "아자"
+
+# list1의 요소를 " " 구분자로 하여 문자열로 반환
+result = " ".join(list1)
+print(result)
